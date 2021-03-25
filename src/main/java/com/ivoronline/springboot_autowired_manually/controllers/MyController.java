@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class MyController {
 
-  @Autowired
-  MyService myService;
+  //@Autowired
+  MyService myService = new MyService();
 
   @ResponseBody
   @RequestMapping("/hello")
@@ -20,3 +20,5 @@ public class MyController {
   }
 
 }
+
+
